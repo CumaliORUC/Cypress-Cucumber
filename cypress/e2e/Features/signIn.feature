@@ -11,4 +11,4 @@ And I enter email
 And I enter password
 And I enter password again
 And I check on terms checkbox
-Then I should see successfully message
+Then I should see email verification message

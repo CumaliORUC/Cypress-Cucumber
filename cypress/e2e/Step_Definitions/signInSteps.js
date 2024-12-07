@@ -1,5 +1,5 @@
 import { Given, Then, When, And } from 'cypress-cucumber-preprocessor/steps';
-import { SignPage }  from '../Pages/SignIn';
+import { SignPage }  from '../Pages/SignInPage';
 
 const signpage=new SignPage();
 
@@ -38,7 +38,9 @@ And ('I enter lastname',()=>{
     signpage.checkTerms();
  })
 
- Then ('I should see successfully message',()=>{
+ Then ('I should see email verification message',()=>{
    
+    signpage.uyeolbuttonTikla();
+    
  })
 

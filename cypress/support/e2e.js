@@ -27,6 +27,10 @@ Cypress.on('uncaught:exception', (err, runnable) => {
     if (err.message.includes('contentWindow is null')) {
         return false;
     }
-
     return true;
 });
+
+
+
+
+
