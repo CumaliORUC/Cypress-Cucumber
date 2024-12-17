@@ -7,7 +7,8 @@ export class LoginPage{
         "login_password":"#pass",
         "login_girisButton":"#btn_login",
         "uyelikBilgilerimText":"Üyelik Bilgilerim",
-        "guvenliCikis":"GÜVENLI ÇIKIŞ"
+        "guvenliCikis":"GÜVENLI ÇIKIŞ",
+        "errorMessage":".content > p"
     }
     gotoLoginPage(){
     cy.contains(this.weblocators.hesabim).click();
@@ -35,4 +36,7 @@ export class LoginPage{
    clickLogout() {
    cy.contains(this.weblocators.guvenliCikis).click()
  }
+  getErrorMessage(){
+    return cy.get(this.weblocators.errorMessage)
+  }
 }
